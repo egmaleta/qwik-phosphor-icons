@@ -32,7 +32,7 @@ const generate = (weight) => {
       const component = TEMPLATE.replace('@CONTENT@', content);
 
       writeFileSync(
-        resolve(destinationPath, `${name}.tsx`),
+        resolve(destinationPath, `${name}-icon.tsx`),
         component,
         'utf-8'
       );
@@ -41,7 +41,7 @@ const generate = (weight) => {
     }
 
     module.write(
-      `export { default as ${pascal_name} } from './components/${weight}/${name}';\n`
+      `export { default as ${pascal_name}Icon } from './components/${weight}/${name}-icon';\n`
     );
   });
 
