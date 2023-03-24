@@ -26,6 +26,36 @@
       "import": "./lib/index.qwik.mjs",
       "require": "./lib/index.qwik.cjs",
       "types": "./lib-types/index.d.ts"
+    },
+    "./thin": {
+      "import": "./lib/thin.qwik.mjs",
+      "require": "./lib/thin.qwik.cjs",
+      "types": "./lib-types/thin.d.ts"
+    },
+    "./light": {
+      "import": "./lib/light.qwik.mjs",
+      "require": "./lib/light.qwik.cjs",
+      "types": "./lib-types/light.d.ts"
+    },
+    "./regular": {
+      "import": "./lib/regular.qwik.mjs",
+      "require": "./lib/regular.qwik.cjs",
+      "types": "./lib-types/regular.d.ts"
+    },
+    "./bold": {
+      "import": "./lib/bold.qwik.mjs",
+      "require": "./lib/bold.qwik.cjs",
+      "types": "./lib-types/bold.d.ts"
+    },
+    "./fill": {
+      "import": "./lib/fill.qwik.mjs",
+      "require": "./lib/fill.qwik.cjs",
+      "types": "./lib-types/fill.d.ts"
+    },
+    "./duotone": {
+      "import": "./lib/duotone.qwik.mjs",
+      "require": "./lib/duotone.qwik.cjs",
+      "types": "./lib-types/duotone.d.ts"
     }
   },
   "files": [

@@ -6,7 +6,15 @@ export default defineConfig(() => {
     build: {
       target: 'es2020',
       lib: {
-        entry: ['./src/index.ts'],
+        entry: [
+          'index',
+          'thin',
+          'light',
+          'regular',
+          'bold',
+          'fill',
+          'duotone',
+        ].map((entry) => `./src/${entry}.ts`),
         formats: ['es', 'cjs'],
         fileName: (format, name) =>
           `${name}.qwik.${format === 'es' ? 'mjs' : 'cjs'}`,

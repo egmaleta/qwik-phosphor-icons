@@ -39,3 +39,5 @@ lerna-debug.log*
 
 /src/components/*
 !/src/components/base-icon.tsx
+
+/src/*.ts
