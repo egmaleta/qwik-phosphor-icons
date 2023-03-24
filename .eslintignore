@@ -11,7 +11,7 @@ bazel-qwik
 bazel-testlogs
 dist
 dist-dev
-lib
+/lib
 lib-types
 etc
 external
@@ -29,3 +29,5 @@ build
 dist
 tsconfig.tsbuildinfo
 vite.config.ts
+
+build.js
