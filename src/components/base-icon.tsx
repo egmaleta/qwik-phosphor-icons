@@ -1,10 +1,14 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot, useContext } from '@builder.io/qwik';
+import { default as contextId } from '../lib/context';
 import defaultProps from '../lib/default-props';
 import { IconProps } from '../lib/types';
 
 export default component$((props: IconProps) => {
+  const context = useContext(contextId);
+  
   const { color, size, mirrored, title, ...rest } = {
     ...defaultProps,
+    ...context,
     ...props,
   };
 
