@@ -4,8 +4,8 @@ import defaultProps from '../lib/default-props';
 import { IconProps } from '../lib/types';
 
 export default component$((props: IconProps) => {
-  const context = useContext(contextId);
-  
+  const context = useContext(contextId, {});
+
   const { color, size, mirrored, title, ...rest } = {
     ...defaultProps,
     ...context,
